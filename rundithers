@@ -1,0 +1,51 @@
+# run Stage 1 on remaining 7 dithers for F115W (detector A1) and F277W (A5)
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00002_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00003_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00004_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00005_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00006_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00007_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00008_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00009_nrca1_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00002_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00003_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00004_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00005_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00006_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00007_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00008_nrcalong_uncal.fits
+strun data/detector1_edited.asdf data/uncals/jw02736001001_02101_00009_nrcalong_uncal.fits
+# remove 1/f noise/striping from countrate images
+python remstriping.py --runone calibrated/jw02736001001_02101_00002_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00003_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00004_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00005_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00006_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00007_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00008_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00009_nrca1_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00002_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00003_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00004_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00005_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00006_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00007_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00008_nrcalong_rate.fits
+python remstriping.py --runone calibrated/jw02736001001_02101_00009_nrcalong_rate.fits
+# run Stage 2
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00002_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00003_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00004_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00005_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00006_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00007_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00008_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00009_nrca1_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00002_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00003_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00004_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00005_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00006_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00007_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00008_nrcalong_rate.fits 
+strun data/image2_edited.asdf calibrated/jw02736001001_02101_00009_nrcalong_rate.fits 
