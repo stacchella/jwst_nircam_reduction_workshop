@@ -1,0 +1,55 @@
+{
+  "asn_type" : "None",
+  "asn_rule" : "DMS_Level3_Base",
+  "version_id" : null,
+  "code_version" : "1.7.3",
+  "degraded_status" : "No known degraded exposures in association.",
+  "program" : "noprogram",
+  "constraints" : "No constraints",
+  "asn_id" : "a3001",
+  "target" : "none",
+  "asn_pool" : "none",
+  "products" : [
+    {
+      "name" : "f090w_nrca1",
+      "members" : [
+        {
+          "expname" : "calibrated/jw02736001001_02101_00001_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00002_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00003_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00004_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00005_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00006_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00007_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00008_nrca1_cal.fits",
+          "exptype" : "science"
+        },
+        {
+          "expname" : "calibrated/jw02736001001_02101_00009_nrca1_cal.fits",
+          "exptype" : "science"
+        }
+      ]
+    }
+  ]
+}
